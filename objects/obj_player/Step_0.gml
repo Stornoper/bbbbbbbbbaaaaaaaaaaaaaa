@@ -124,6 +124,12 @@ if buildMode
 		instance_create_layer(mouse_x, mouse_y, "Instances_2", obj_block_inferno_transparant); 
 		fourselected= true
 	}
+	else if keyboard_check_pressed(ord("5")) && fiveselected = false 
+	{
+		clearSelection();
+		instance_create_layer(mouse_x, mouse_y, "Instances_2", obj_block_cannon_transparant); 
+		fiveselected= true
+	}
 	else if build_key
 	{
 		clearSelection();

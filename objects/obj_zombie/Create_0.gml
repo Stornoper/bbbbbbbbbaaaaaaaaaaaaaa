@@ -5,3 +5,4 @@ yspd = 0;
 movesp = 3;
 hitPoints = 300;
 damageTimer = 0
+vaultdamagetimer = 0;

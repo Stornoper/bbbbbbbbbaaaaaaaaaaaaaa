@@ -42,7 +42,7 @@ if place_meeting(x, y + spd_y, obj_collission)
     }
     spd_x = 0;    
 }
-
+vaultdamagetimer--;
 damageTimer -= 1;
 if place_meeting(x, y, obj_player) && damageTimer <= 0
 {
@@ -54,6 +54,13 @@ if hitPoints <= 0
 {
   instance_destroy();
 }
+
+if place_meeting(x, y, obj_block_vault) && vaultdamagetimer <= 0
+{
+	obj_block_vault.hitPoints -= 20
+	vaultdamagetimer = 30
+}
+
 
 //beweging
 x += spd_x * movesp;

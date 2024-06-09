@@ -3,3 +3,4 @@
 depth = -1000;
 timer = 35;
 noZombie = true;
+crossbow_target = 0;

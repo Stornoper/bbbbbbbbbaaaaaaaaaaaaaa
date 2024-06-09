@@ -8,6 +8,7 @@ oneselected = false;
 twoselected = false;
 threeselected = false;
 fourselected = false;
+fiveselected = false;
 
 hitPoints = 100;
 oneselectednormal = false;

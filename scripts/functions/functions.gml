@@ -39,6 +39,11 @@ function clearSelection()
 			instance_destroy(obj_block_inferno_transparant);
 			fourselected = false;
 		}
+		if fiveselected
+		{
+			instance_destroy(obj_block_cannon_transparant);
+			fiveselected = false;
+		}
 	}
 	if !buildMode
 	{

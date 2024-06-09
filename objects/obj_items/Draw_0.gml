@@ -7,4 +7,8 @@ draw_text(camera_get_view_x(view_camera[0]) + 80, camera_get_view_y(view_camera[
 draw_text(camera_get_view_x(view_camera[0]) + 80, camera_get_view_y(view_camera[0]) + 60, string(stone_count));
 draw_text(camera_get_view_x(view_camera[0]) + 80, camera_get_view_y(view_camera[0]) + 94, string(iron_count));
 draw_text(camera_get_view_x(view_camera[0]) + 944, camera_get_view_y(view_camera[0]) + 16, string(obj_player.hitPoints));
+if instance_exists(obj_block_vault)
+{
+draw_text(camera_get_view_x(view_camera[0]) + 944, camera_get_view_y(view_camera[0]) + 60, string(obj_block_vault.hitPoints));
+}
 }
